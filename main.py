@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-import matplotlib as plt
+import matplotlib.pyplot as plt
 
 Amazon_books= pd.read_csv("dataset1.csv")
 print(Amazon_books.head()) 
@@ -20,4 +20,5 @@ count_comparison_graph = count_comparison.plot.bar(x="book genre", y= "count", c
 
 #graph 2
 
-plt.scatter(Amazon_books[" User Rating"], Amazon_books["Price_r"])
+plt.scatter(Amazon_books["User Rating"], Amazon_books["Price_r"])
+plt.show()
