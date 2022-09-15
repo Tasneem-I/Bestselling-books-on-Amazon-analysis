@@ -20,4 +20,4 @@ count_comparison_graph = count_comparison.plot.bar(x="book genre", y= "count", c
 
 #graph 2
 
-plt.scatter(Amazon_books[" user_ratings"], Amazon_books["price_r"])
+plt.scatter(Amazon_books[" User Rating"], Amazon_books["Price_r"])
